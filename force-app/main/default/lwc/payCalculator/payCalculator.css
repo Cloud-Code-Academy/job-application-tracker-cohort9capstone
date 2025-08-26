@@ -1,0 +1,48 @@
+/*
+The :host selector is a special keyword that targets the outermost element of the LWC component.
+:host { ... } applies all of these styles to the root container of the c-pay-calculator component.
+It ensures the component has a block layout, controlled width, padding, and Salesforce-style fonts/colors.
+---
+Styles the Main Component Box.
+Keeps it between 430px and 620px wide.
+Adds padding around the content.
+Uses Salesforce's font.
+White background with a border and soft shadow.
+*/
+:host {
+    display: block;
+    min-width: 430px;
+    max-width: 620px;
+    padding: 1rem;
+    font-family: Salesforce Sans, Arial, sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Adds space under the Salary input box. */
+.slds-form-element {
+    margin-bottom: 1rem;
+}
+
+/* Makes the input box stretch full width. */
+.slds-form-element__control input {
+    width: 100%;
+}
+
+/* Adds padding inside the card body. */
+.slds-card__body {
+    padding: 1rem;
+}
+
+/* Bold labels for results. */
+.result-label {
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+/* Adds space between result rows. */
+.result-row {
+    margin-bottom: 0.5rem;
+}
