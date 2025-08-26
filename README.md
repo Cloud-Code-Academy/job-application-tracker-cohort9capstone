@@ -132,3 +132,15 @@ This Project Demonstrates:
 - A User-friendly front-end calculator with LWC.
 - Strong data modeling with Junction Objects (to allow multiple Contacts per Job Application).
 - Testing best practices for reliability and compliance (test coverage, which ensures automation works reliably in all scenarios).
+
+## Roadmap Planning
+- [x] Custom Object: Job Application
+- [x] Junction Object (Job Application Contact)
+- [x] Paycheck Calculation Automation
+- [x] Primary Contact Assignment
+- [x] Lightning Web Component: Take Home Pay Calculator
+- [ ] Interview Event Tracking
+- [ ] Email Notifications / Reminders (Day-Before Interview)
+- [ ] Automatically Close Stale Applications (After 30+ Days)
+- [ ] Job Board Integration (Pull Jobs into Salesforce)
+- [ ] Reports & Dashboards
