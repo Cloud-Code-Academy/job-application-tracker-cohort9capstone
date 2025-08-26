@@ -1,0 +1,48 @@
+<!-- Every LWC starts inside <template>. It's like the wrapper for the UI. -->
+<template>
+    <!-- Displays the results inside a Salesforce card with a title and a money icon. -->
+    <lightning-card title="Take Home Pay Calculator" icon-name="standard:money">
+        <!-- A wrapper div (like a container box) for the card's main content. -->
+        <div class="slds-card__body slds-card__body_inner">
+        <!-- 
+            This creates the input box where the User types their Salary.
+            <label> = Text above the box saying "Salary ($)".
+            <input type="number"> = Ensures only numbers can be typed.
+            value={salary} = The box always shows the current Salary variable.
+            oninput={handleSalaryChange} = When the User types, it runs the JS function.
+        -->
+            <!-- Salary Input -->
+            <div class="slds-form-element">
+                <label class="slds-form-element__label" for="salaryInput">Salary ($)</label>
+                <div class="slds-form-element__control">
+                    <input type="number" id="salaryInput" class="slds-input" 
+                           value={salary} 
+                           oninput={handleSalaryChange} />
+                </div>
+            </div>
+
+            <!-- Results Grid -->
+            <!-- This starts the section that shows the results in a grid layout (two columns). -->
+            <div class="result slds-grid slds-wrap">
+                <!-- Shows "Federal Tax" followed by the live value of federalTax. -->
+                <!-- <strong> makes the label bold. -->
+                <!-- The same pattern repeats for Social Security, Medicare, Yearly Take Home, and Monthly Take Home. -->
+                <div class="slds-col slds-size_1-of-2">
+                    <p><strong>Federal Tax:</strong> ${federalTax}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <p><strong>Social Security:</strong> ${socialSecurity}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <p><strong>Medicare:</strong> ${medicare}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <p><strong>Yearly Take Home:</strong> ${takeHomeYearly}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <p><strong>Monthly Take Home:</strong> ${takeHomeMonthly}</p>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location__c</fullName>
+    <description>Job location</description>
+    <externalId>false</externalId>
+    <label>Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hybrid</fullName>
+                <default>false</default>
+                <label>Hybrid</label>
+            </value>
+            <value>
+                <fullName>On-Site</fullName>
+                <default>false</default>
+                <label>On-Site</label>
+            </value>
+            <value>
+                <fullName>Remote</fullName>
+                <default>false</default>
+                <label>Remote</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
