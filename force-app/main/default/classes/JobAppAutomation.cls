@@ -415,7 +415,7 @@
 
             // Prevent recursion. Exit early if Tasks were already created in this transaction.
             if (tasksAlreadyCreated) {
-                System.debug('⚠️ Exiting early. Tasks already created in this transaction.');
+                System.debug('Exiting early. Tasks already created in this transaction.');
                 return;
             }
             tasksAlreadyCreated = true; // Mark as true, so this block won't run again in this transaction.
