@@ -102,7 +102,7 @@ Key Features:
 - Uses SLDS (Salesforce Lightning Design System) for styling.
 - Demonstrates client-side interactivity with LWC.
 
-## Job_Application__c (Custom Object)
+## Custom Object: Job Application
 
 - Stores each Job Application record with Fields like:
 - Salary__c – The Applicant's Salary.
@@ -135,7 +135,7 @@ This Project Demonstrates:
 
 ## Roadmap Planning
 - [x] Custom Object: Job Application
-- [x] Junction Object (Job Application Contact)
+- [x] Junction Object: Job Application Contact
 - [x] Paycheck Calculation Automation
 - [x] Primary Contact Assignment
 - [x] Lightning Web Component: Take Home Pay Calculator
